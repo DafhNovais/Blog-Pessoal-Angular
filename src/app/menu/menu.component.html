@@ -7,11 +7,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto d-flex align-items-center">
             <li class="nav-item active">
-                <img src="https://i.imgur.com/CBRg2kd.png" alt="Foto do usuário" width="50px" height="50px"
+                <img src= "{{foto}}" alt="Foto do usuário" width="50px" height="50px"
                     class="img-fluid rounded-circle">
             </li>
             <li class="nav-item pl-3">
-                <p class="m-0 font-weight-bold text-white fs-16">User Name</p>
+                <p class="m-0 font-weight-bold text-white fs-16">Olá, {{nome}}</p>
             </li>
             <li class="nav-item pl-3 ">
                 <a href="">
@@ -24,14 +24,7 @@
 
         <ul class="navbar-nav ml-auto d-flex align-items-center">
             <li class="nav-item pl-3">
-                <p class="m-0 font-weight-bold text-white fs-16">Sair</p>
-            </li>
-            <li class="nav-item pl-2 ">
-                <a href="">
-                    <p class="icon m-0" >
-                        <i class="fas fa-sign-out-alt"></i>
-                    </p>
-                </a>
+                <a (click)='sair()' class="m-0 font-weight-bold text-white fs-16">Sair <i class="fas fa-sign-out-alt icon" aria-hidden="true"></i></a>                
             </li>
         </ul>
     </div>
