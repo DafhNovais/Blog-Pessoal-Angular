@@ -3,3 +3,23 @@
 html {
     scroll-behavior: smooth;
 }
+
+.fs-54 {
+    font-size: 54pt;
+}
+
+.fs-18 {
+    font-size: 18pt;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.icon {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.icon:hover {
+    color: white;
+}
