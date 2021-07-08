@@ -89,6 +89,11 @@
 
                     <div class="card-body pt-2">
 
+                        <div class="position-relative d-flex justify-content-end">
+                            <a [routerLink]="['/postagem-edit', item.id]" class="m-2 position-absolute" href=""><i class="fas fa-pen"></i></a>
+                            <a [routerLink]="['/postagem-delete', item.id]" class="m-2 position-absolute mt-4" href=""><i class="far fa-trash-alt"></i></a>
+                        </div>
+
                         <div class="text-center">
                             <h5 class="card-title text-center mpnn">{{item.titulo}}</h5>
                             <small class="mpnn tmc">Tema: {{item.tema.descricao}}</small>
@@ -180,7 +185,7 @@
             </div>
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-info" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-outline-info mr-4" data-dismiss="modal">Cancelar</button>
                 <button type="button" class="btn btn-info" (click)='publicar()' data-dismiss="modal">Publicar</button>
             </div>
 
