@@ -11,10 +11,10 @@
                     class="img-fluid rounded-circle">
             </li>
             <li class="nav-item pl-3">
-                <p class="m-0 font-weight-bold text-white fs-16">Olá, {{nome}}</p>
+                <p class="m-0 font-weight-bold text-white fs-16 text-capitalize">Olá, {{nome}}</p>
             </li>
             <li class="nav-item pl-3 ">
-                <a href="">
+                <a [routerLink]="['/user-edit', id]">
                     <p class="icon m-0" >
                         <i class="fas fa-pen"></i>
                     </p>
