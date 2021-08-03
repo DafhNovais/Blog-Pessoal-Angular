@@ -52,10 +52,17 @@
         <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
             aria-labelledby="nav-todasPostagens-tab">
 
+            <div class="row d-flex justify-content-center mt-5 mb-5">
+                <div class="col-md-4">
+                    <div class="form-group d-flex">
+                        <input type="text" class="form-control" id="titulo" placeholder="Título" [(ngModel)]='tituloPost' (keyup)='findByTituloPostagem()'><i class="fas fa-search m-2 pt-1"></i>
+                    </div>
+                </div>
+            </div>
+
             <div class="card-columns">
 
-                <div class="card" 
-                *ngFor='let item of listaPostagens | orderBy : key : reverse'>
+                <div class="card" *ngFor='let item of listaPostagens | orderBy : key : reverse'>
 
                     <div class="card-body pt-2">
 
@@ -86,14 +93,15 @@
 
             <div class="card-columns">
 
-                <div class="card" 
-                *ngFor='let item of user.postagem | orderBy : key : reverse'>
+                <div class="card" *ngFor='let item of user.postagem | orderBy : key : reverse'>
 
                     <div class="card-body pt-2">
 
                         <div class="position-relative d-flex justify-content-end">
-                            <a [routerLink]="['/postagem-edit', item.id]" class="m-2 position-absolute" href=""><i class="fas fa-pen"></i></a>
-                            <a [routerLink]="['/postagem-delete', item.id]" class="m-2 position-absolute mt-4" href=""><i class="far fa-trash-alt"></i></a>
+                            <a [routerLink]="['/postagem-edit', item.id]" class="m-2 position-absolute" href=""><i
+                                    class="fas fa-pen"></i></a>
+                            <a [routerLink]="['/postagem-delete', item.id]" class="m-2 position-absolute mt-4"
+                                href=""><i class="far fa-trash-alt"></i></a>
                         </div>
 
                         <div class="text-center">
@@ -119,10 +127,17 @@
 
         <div class="tab-pane fade" id="postagensTema" role="tabpanel" aria-labelledby="nav-postagensTema-tab">
 
+            <div class="row d-flex justify-content-center mt-5 mb-5">
+                <div class="col-md-4">
+                    <div class="form-group d-flex">
+                        <input type="text" class="form-control" id="titulo" placeholder="Tema" [(ngModel)]='nomeTema' (keyup)='findByNomeTema()'><i class="fas fa-search m-2 pt-1"></i>
+                    </div>
+                </div>
+            </div>
+
             <div class="card-columns" *ngFor='let tema of listaTemas'>
 
-                <div class="card" 
-                *ngFor='let item of tema.postagem | orderBy : key : reverse'>
+                <div class="card" *ngFor='let item of tema.postagem | orderBy : key : reverse'>
 
                     <div class="card-body pt-2">
 
