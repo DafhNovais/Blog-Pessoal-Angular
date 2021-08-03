@@ -54,7 +54,8 @@
 
             <div class="card-columns">
 
-                <div class="card" *ngFor='let item of listaPostagens'>
+                <div class="card" 
+                *ngFor='let item of listaPostagens | orderBy : key : reverse'>
 
                     <div class="card-body pt-2">
 
@@ -85,7 +86,8 @@
 
             <div class="card-columns">
 
-                <div class="card" *ngFor='let item of user.postagem'>
+                <div class="card" 
+                *ngFor='let item of user.postagem | orderBy : key : reverse'>
 
                     <div class="card-body pt-2">
 
@@ -119,7 +121,8 @@
 
             <div class="card-columns" *ngFor='let tema of listaTemas'>
 
-                <div class="card" *ngFor='let item of tema.postagem'>
+                <div class="card" 
+                *ngFor='let item of tema.postagem | orderBy : key : reverse'>
 
                     <div class="card-body pt-2">
 
