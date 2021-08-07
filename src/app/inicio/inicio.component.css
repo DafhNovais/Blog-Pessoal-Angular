@@ -1,0 +1,33 @@
+.mpnn {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.tmc {
+    color: #22adc2;
+    font-weight: 600;
+}
+
+.fa-search {
+    color: #777;    
+}
+
+.fa-pen {
+    color: #66c9d8a1;
+}
+
+.fa-pen:hover {
+    color: #16c8e4;
+}
+
+.fa-trash-alt {
+    color: rgba(232, 102, 102, 0.645);
+}
+
+.fa-trash-alt:hover {
+    color: rgb(252, 39, 39);
+}
+
+.card-title {
+    color: #555;
+}

@@ -1,0 +1,6 @@
+#img-bg {
+    background-image: url('https://source.unsplash.com/500x700/?light');
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
